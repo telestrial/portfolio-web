@@ -6,6 +6,14 @@
   box-sizing: inherit;
 }
 
+:root {
+  --color-black-dark: #242423;
+  --color-black-light: #333533;
+  --color-gold: #f5cb5c;
+  --color-grey-light: #e8eddf;
+  --color-grey-blue: #cfdbd5;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10px/16px = 62.5% => 1 rem = 10px */
@@ -16,4 +24,9 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6;
+  background-image: linear-gradient(
+    to right,
+    var(--color-black-dark),
+    var(--color-black-light)
+  );
 }
