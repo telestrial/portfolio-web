@@ -53,6 +53,7 @@ body {
 
 .nav {
   margin: 2rem;
+  margin-top: 1.5rem;
   font-size: 1.4rem;
 
   display: flex;
@@ -60,7 +61,7 @@ body {
   align-items: center;
 }
 
-.nav__logo--svg {
+.nav__svg {
   height: 5rem;
   width: 5rem;
 }
