@@ -15,9 +15,29 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <section class="about"></section>
-    <section class="skills"></section>
-    <section class="projects"></section>
-    <section class="contact"></section>
+    <nav class="nav">
+      <div class="nav__logo">
+        <svg class="nav__logo--svg">
+          <use xlink:href="img/logo.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="nav__links">
+        <a href="#about"><span class="nav__links--numbers">01.</span>About</a>
+        <a href="#skills"><span class="nav__links--numbers">02.</span>Skills</a>
+        <a href="#projects"
+          ><span class="nav__links--numbers">03.</span>Projects</a
+        >
+        <a href="#contact"
+          ><span class="nav__links--numbers">04.</span>Contact</a
+        >
+        <button class="btn">Resume</button>
+      </div>
+    </nav>
+    <div class="externals"></div>
+    <section class="home">Hi, my name is</section>
+    <section class="about"><h1 id="about">About</h1></section>
+    <section class="skills"><h1 id="skills">Skills</h1></section>
+    <section class="projects"><h1 id="projects">Projects</h1></section>
+    <section class="contact"><h1 id="contact">Contact</h1></section>
   </body>
 </html>
