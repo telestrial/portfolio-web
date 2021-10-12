@@ -55,6 +55,7 @@ body {
 /* Navigation */
 
 .nav {
+  height: 7vh;
   padding: 0.5rem;
   padding-top: 1rem;
   font-size: 1.4rem;
@@ -97,7 +98,7 @@ section {
 /* LANDING */
 
 .landing {
-  height: 70vh;
+  height: 89vh;
   line-height: 1;
 
   display: flex;
@@ -123,16 +124,16 @@ section {
 }
 
 .landing__explanation {
-  margin-right: 100rem;
+  margin-right: 55%;
   line-height: 1.6;
 }
 
-.landing__explanation a {
-  text-decoration: none;
+.scroll {
+  font-size: 2rem;
+  text-align: center;
   color: var(--color-green);
-  transition: all 0.2s;
 }
 
-.landing__explanation a:hover {
-  color: #befff0;
+.about {
+  height: 100vh;
 }
