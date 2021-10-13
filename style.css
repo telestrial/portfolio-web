@@ -140,6 +140,17 @@ section {
   font-size: 2rem;
 }
 
+.landing__photo {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border: 1px solid var(--color-green);
+  border-radius: 1rem;
+  justify-self: flex-start;
+  align-self: center;
+  margin-right: 10vw;
+}
+
 .scroll {
   font-size: 2rem;
   text-align: center;
