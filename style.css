@@ -233,7 +233,7 @@ section {
   height: 35rem;
   align-self: center;
   justify-self: center;
-  border: 1px solid var(--color-green);
+  /* border: 1px solid var(--color-green); */
   filter: drop-shadow(0 0 0.75rem var(--color-green));
 
   transform: rotate(3deg);
