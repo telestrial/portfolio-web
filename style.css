@@ -37,9 +37,7 @@ body {
 /* Button */
 
 #btn {
-  font-size: 1.2rem;
   text-decoration: none;
-  margin: 1rem;
   padding: 0.75rem 1.5rem;
   color: var(--color-green);
   background-color: var(--color-light-navy);
@@ -89,6 +87,11 @@ body {
   margin-right: 0.5rem;
 }
 
+.nav__links--resume {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
 /* SECTION - GENERAL*/
 
 section {
@@ -125,7 +128,16 @@ section {
 
 .landing__explanation {
   margin-right: 55%;
-  line-height: 1.6;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+
+.landing__explanation--emojis {
+  font-size: 1.9rem;
+}
+
+.landing__hireme {
+  font-size: 2rem;
 }
 
 .scroll {
@@ -133,6 +145,8 @@ section {
   text-align: center;
   color: var(--color-green);
 }
+
+/* ABOUT */
 
 .about {
   height: 100vh;
