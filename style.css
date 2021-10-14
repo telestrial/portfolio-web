@@ -259,7 +259,7 @@ section {
 
 .about__pic--2 {
   z-index: 2;
-  transform: rotate(3deg) translateY(7rem) translateX(7rem);
+  transform: rotate(3deg) translateY(4rem) translateX(4rem);
 }
 
 .about__pic--2:hover {
@@ -269,7 +269,7 @@ section {
 
 .about__pic--3 {
   z-index: 1;
-  transform: rotate(3deg) translateY(-3rem) translateX(11rem);
+  transform: rotate(3deg) translateY(7rem) translateX(7rem);
 }
 
 .about__pic--3:hover {
