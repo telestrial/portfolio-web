@@ -280,8 +280,12 @@ section {
   margin-top: 10rem;
 }
 
+.projects h1 {
+  margin-left: 5rem;
+}
+
 .projects__container {
-  margin: 5rem;
+  margin: 5rem 15rem 0 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
@@ -316,10 +320,13 @@ section {
   grid-row: 2;
 }
 
+.projects__image {
+  margin-bottom: 0.5rem;
+}
+
 .projects__image img {
   width: 100%;
   display: block;
-  margin-bottom: 0.5rem;
 }
 
 .projects__info,
