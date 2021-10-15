@@ -295,7 +295,6 @@ section {
 
 .projects__card {
   padding: 1rem;
-  border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -341,4 +340,78 @@ section {
   background-color: var(--color-navy);
   padding: 0.75rem;
   border-radius: 5px;
+}
+
+.contact {
+  margin-top: 7rem;
+  padding: 10rem 30rem;
+}
+
+.contact__container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 30rem;
+  padding: 2rem;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+
+.contact__container p {
+  margin-bottom: 1rem;
+}
+
+.contact__form {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.contact__form h1 {
+  margin: 0 1rem;
+}
+
+.contact__form--name {
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+
+.contact__form--email {
+  grid-row: 1;
+  grid-column: 2 / 3;
+}
+
+.contact__form--subject {
+  grid-column: 1 / 3;
+}
+
+.contact__form--message {
+  grid-column: 1 / 3;
+}
+
+.contact__form--button {
+  grid-column: 1 / 3;
+}
+
+.contact__container input,
+.contact__container textarea {
+  font: inherit;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-light-navy);
+  border-radius: 5px;
+  color: var(--color-dark-navy);
+  background-color: var(--color-lightest-slate);
+}
+
+.footer {
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-green);
+  padding: 0.5rem 0;
+  background-color: var(--color-dark-navy);
 }
