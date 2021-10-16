@@ -42,7 +42,7 @@ body {
   background-color: var(--color-light-navy);
   border: 1px solid var(--color-green);
   border-radius: 5px;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 #btn:hover {
@@ -121,6 +121,21 @@ section {
   padding: 0 15rem;
 }
 
+.section__title {
+  overflow: hidden;
+}
+
+.section__title:after {
+  content: '';
+  display: inline-block;
+  height: 0.8em;
+  vertical-align: bottom;
+  width: 80%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid var(--color-green);
+}
+
 /* LANDING */
 
 .landing {
@@ -152,7 +167,6 @@ section {
 .landing__explanation {
   margin-right: 55%;
   line-height: 2;
-  margin-bottom: 3rem;
 }
 
 .landing__explanation--emojis {
@@ -175,6 +189,19 @@ section {
   justify-self: flex-start;
   align-self: center;
   margin-right: 10rem;
+}
+
+.landing__svglink {
+  color: var(--color-lightest-navy);
+  text-decoration: none;
+}
+
+.landing svg {
+  transform: translateY(1.75rem);
+}
+
+.landing__hireme {
+  margin-left: 1rem;
 }
 
 .scroll {
@@ -295,12 +322,17 @@ section {
 
 .projects__card {
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  transition: all 0.5s;
 
   display: grid;
   grid-template-rows: 2;
+}
+
+.projects__card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .projects__card--featured {
@@ -343,21 +375,14 @@ section {
 }
 
 .contact {
-  margin-top: 7rem;
-  padding: 10rem 30rem;
+  margin: 6rem 40rem;
 }
 
 .contact__container {
-  margin-left: 1rem;
-  /* margin-top: 1rem; */
-  margin-right: 30rem;
-  padding: 5rem;
-  padding-top: 1rem;
+  padding: 2rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 10px;
+  transition: all 1s;
 }
 
 .contact__container h1 {
