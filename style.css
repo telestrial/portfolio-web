@@ -98,6 +98,24 @@ body {
   color: var(--color-lightest-slate);
   padding: 0 1rem;
   transition: all 0.2s;
+  animation-name: opacity;
+  animation-iteration-count: 1;
+}
+
+.nav__links--1 {
+  animation-duration: 1s;
+}
+
+.nav__links--2 {
+  animation-duration: 3s;
+}
+
+.nav__links--3 {
+  animation-duration: 5s;
+}
+
+.nav__links--4 {
+  animation-duration: 7s;
 }
 
 .nav__links a:hover {
@@ -197,16 +215,40 @@ section {
 
 .landing svg {
   transform: translateY(1.75rem);
+  animation-name: slidesvg;
+  animation-timing-function: cubic-bezier(0.21, 0.66, 1, 1.2);
+}
+
+.landing__svg--1 {
+  animation-duration: 0.75s;
+}
+
+.landing__svg--2 {
+  animation-duration: 1s;
+}
+
+.landing__svg--3 {
+  animation-duration: 1.5s;
+}
+
+.landing__svg--4 {
+  animation-duration: 2s;
 }
 
 .landing__hireme {
   margin-left: 1rem;
+  animation-name: slidesvg;
+  animation-duration: 2.75s;
 }
 
 .scroll {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   color: var(--color-green);
+  animation-name: arrowglow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
 
 /* ABOUT */
@@ -304,6 +346,8 @@ section {
   filter: drop-shadow(0 0 0.75rem var(--color-green));
 }
 
+/* PROJECTS */
+
 .projects {
   margin-top: 10rem;
 }
@@ -321,6 +365,7 @@ section {
 
 .projects__card {
   padding: 1rem;
+  border-radius: 3px;
 
   transition: all 0.5s;
 
@@ -373,12 +418,15 @@ section {
   border-radius: 5px;
 }
 
+/* CONTACt */
+
 .contact {
   margin: 6rem 40rem;
 }
 
 .contact__container {
   padding: 2rem;
+  padding-top: 0;
   text-align: center;
   border-radius: 10px;
   transition: all 1s;
@@ -437,10 +485,52 @@ section {
   background-color: var(--color-lightest-slate);
 }
 
+/* FOOTER */
+
 .footer {
   font-weight: 400;
   text-align: center;
   color: var(--color-green);
   padding: 0.5rem 0;
   background-color: var(--color-dark-navy);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidesvg {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(1.75rem);
+  }
+}
+
+@keyframes arrowglow {
+  0% {
+    color: var(--color-lightest-navy);
+  }
+
+  50% {
+    color: var(--color-green);
+  }
+
+  100% {
+    color: var(--color-lightest-navy);
+  }
 }
