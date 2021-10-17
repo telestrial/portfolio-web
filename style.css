@@ -107,15 +107,15 @@ body {
 }
 
 .nav__links--2 {
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .nav__links--3 {
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 .nav__links--4 {
-  animation-duration: 7s;
+  animation-duration: 4s;
 }
 
 .nav__links a:hover {
@@ -311,15 +311,16 @@ section {
   align-self: center;
   justify-self: center;
   border: 3px solid var(--color-green);
+  opacity: 0;
 
   position: absolute;
 
-  transform: rotate(3deg) translateY(1rem);
   transition: all 0.2s;
 }
 
 .about__pic--1 {
   z-index: 3;
+  transform: rotate(3deg) translateY(1rem) translateX(1rem);
 }
 
 .about__pic--1:hover {
@@ -346,6 +347,26 @@ section {
   filter: drop-shadow(0 0 0.75rem var(--color-green));
 }
 
+.about__pic--appear1 {
+  animation-name: albumPicFly--1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.about__pic--appear2 {
+  animation-name: albumPicFly--2;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.about__pic--appear3 {
+  animation-name: albumPicFly--3;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
 /* PROJECTS */
 
 .projects {
@@ -367,16 +388,14 @@ section {
   padding: 1rem;
   border-radius: 3px;
 
-  transition: all 0.5s;
+  transition: all 0.2s;
 
   display: grid;
   grid-template-rows: 2;
 }
 
 .projects__card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .projects__card--featured {
@@ -512,7 +531,7 @@ section {
   }
 
   75% {
-    opacity: 0.25;
+    opacity: 0.2;
   }
 
   100% {
@@ -532,5 +551,41 @@ section {
 
   100% {
     color: var(--color-lightest-navy);
+  }
+}
+
+@keyframes albumPicFly--1 {
+  0% {
+    transform: rotate(3deg) translateX(-1rem) translateY(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(3deg) translateY(1rem);
+    opacity: 1;
+  }
+}
+
+@keyframes albumPicFly--2 {
+  0% {
+    transform: rotate(3deg) translateX(2rem) translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(3deg) translateY(4rem) translateX(4rem);
+    opacity: 1;
+  }
+}
+
+@keyframes albumPicFly--3 {
+  0% {
+    transform: rotate(3deg) translateY(5rem) translateX(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(3deg) translateY(7rem) translateX(7rem);
+    opacity: 1;
   }
 }
