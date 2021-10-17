@@ -350,21 +350,21 @@ section {
 .about__pic--appear1 {
   animation-name: albumPicFly--1;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-delay: 2s;
 }
 
 .about__pic--appear2 {
   animation-name: albumPicFly--2;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 .about__pic--appear3 {
   animation-name: albumPicFly--3;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 /* PROJECTS */
@@ -416,12 +416,13 @@ section {
 }
 
 .projects__image {
+  margin: auto;
   margin-bottom: 0.5rem;
 }
 
 .projects__image img {
   width: 100%;
-  display: block;
+  vertical-align: bottom;
 }
 
 .projects__info,
