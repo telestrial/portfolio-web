@@ -350,21 +350,21 @@ section {
 .about__pic--appear1 {
   animation-name: albumPicFly--1;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
 }
 
 .about__pic--appear2 {
   animation-name: albumPicFly--2;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .about__pic--appear3 {
   animation-name: albumPicFly--3;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 /* PROJECTS */
