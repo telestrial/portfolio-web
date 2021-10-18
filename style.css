@@ -251,6 +251,10 @@ section {
   animation-timing-function: ease-out;
 }
 
+.scroll--done {
+  display: none;
+}
+
 /* ABOUT */
 
 .about {
@@ -380,7 +384,7 @@ section {
 .projects__container {
   margin: 2rem 15rem 0 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 5rem;
 }
 

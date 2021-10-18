@@ -20,3 +20,12 @@ const options = {
 const observer = new IntersectionObserver(albumShow, options);
 
 observer.observe(lastAboutPic);
+
+// Disabling arrow glow on scroll
+const scrollArrow = document.querySelector('.scroll');
+
+window.addEventListener('scroll', (e) => {
+  if (window.scrollY > 10) {
+    scrollArrow.classList.replace('scroll', 'scroll--done');
+  }
+});
