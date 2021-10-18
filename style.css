@@ -393,7 +393,7 @@ section {
 }
 
 .projects__card {
-  padding: 1rem;
+  padding: 3rem;
   border-radius: 3px;
 
   transition: all 0.2s;
@@ -449,7 +449,7 @@ section {
 
 .contact {
   margin: 6rem auto;
-  width: min-content;
+  width: max-content;
 }
 
 .contact__container {
@@ -728,12 +728,12 @@ section {
 
 @media only screen and (max-width: 68.75em) {
   .about {
-    padding: 6rem;
+    padding: 0rem 6rem;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
   .about__bio h1 {
@@ -752,25 +752,36 @@ section {
     position: unset;
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
     grid-gap: 2rem;
   }
 
   .about__pic {
     position: unset;
+    height: 35rem;
     opacity: 1;
     justify-content: none;
     align-items: none;
     transform: translateY(0) translateX(0) rotate(0deg);
   }
 
-  .about__pic--1 {
+  /* .about__pic--1 {
   }
 
   .about__pic--2 {
   }
 
   .about__pic--3 {
+  } */
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  .contact {
+    margin: 6rem;
+    width: min-content;
   }
 }
