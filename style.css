@@ -514,6 +514,15 @@ section {
   background-color: var(--color-dark-navy);
 }
 
+.footer a {
+  text-decoration: none;
+  color: var(--color-lightest-slate);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 @keyframes opacity {
   0% {
     opacity: 0;
