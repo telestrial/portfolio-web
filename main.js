@@ -6,9 +6,12 @@ const lastAboutPic = document.querySelector('.about__pic--3');
 const albumShow = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      lastAboutPic.classList.add('about__pic--appear3');
-      middleAboutPic.classList.add('about__pic--appear2');
-      firstAboutPic.classList.add('about__pic--appear1');
+      if (screen.width <= 1100) {
+      } else {
+        lastAboutPic.classList.add('about__pic--appear3');
+        middleAboutPic.classList.add('about__pic--appear2');
+        firstAboutPic.classList.add('about__pic--appear1');
+      }
     }
   });
 };
