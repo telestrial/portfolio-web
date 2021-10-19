@@ -524,13 +524,8 @@ section {
   background-color: var(--color-dark-navy);
 }
 
-.footer a {
-  text-decoration: none;
+.footer__credit {
   color: var(--color-lightest-slate);
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
 
 @keyframes opacity {
