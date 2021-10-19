@@ -780,3 +780,88 @@ section {
     width: min-content;
   }
 }
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+
+  .section {
+    padding: 0.1rem 1rem;
+  }
+
+  .landing {
+    margin-left: 0.1rem;
+  }
+
+  .landing__purpose {
+    font-size: 5rem;
+  }
+
+  .about {
+    padding: 10rem 2rem;
+  }
+
+  .projects h1 {
+    margin: 0;
+  }
+
+  .projects__container {
+    margin: 1rem 1rem;
+  }
+
+  .contact {
+    margin: 1rem;
+    width: 99%;
+  }
+
+  .contact__container h1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .landing {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .landing__name {
+    font-size: 6rem;
+  }
+
+  .landing__purpose {
+    font-size: 3rem;
+  }
+
+  .landing__photo {
+    margin-right: 2rem;
+  }
+
+  .landing svg {
+    height: 5rem;
+    width: 5rem;
+  }
+  .about {
+    padding: 10rem 2rem;
+  }
+
+  .about__pic {
+    height: 25rem;
+  }
+
+  .about__album {
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .nav__links a {
+    font-size: 1.25rem;
+  }
+
+  .contact__container input,
+  .contact__container textarea {
+    font-size: 1rem;
+  }
+}
