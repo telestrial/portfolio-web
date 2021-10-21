@@ -821,7 +821,9 @@ section {
 }
 
 @media only screen and (max-width: 28.125em) {
-  .nav__links span {
+  .nav__links--1,
+  .nav__links--2,
+  .nav__links--3 {
     display: none;
   }
 
