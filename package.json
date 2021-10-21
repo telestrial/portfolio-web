@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telestrial/portfolio-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/telestrial/portfolio-web/issues"
+  },
+  "homepage": "https://github.com/telestrial/portfolio-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7"
+  }
+}
