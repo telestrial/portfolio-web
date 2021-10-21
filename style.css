@@ -507,7 +507,7 @@ section {
 .contact__container textarea {
   font: inherit;
   font-size: 1.6rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid var(--color-light-navy);
   border-radius: 5px;
   color: var(--color-dark-navy);
@@ -864,6 +864,10 @@ section {
 
   .nav__links a {
     font-size: 1.25rem;
+  }
+
+  .contact__container {
+    padding: 0;
   }
 
   .contact__container input,
