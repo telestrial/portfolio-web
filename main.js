@@ -6,7 +6,7 @@ const lastAboutPic = document.querySelector('.about__pic--3');
 const albumShow = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      if (screen.width <= 1100) {
+      if (window.innerWidth <= 1100) {
       } else {
         lastAboutPic.classList.add('about__pic--appear3');
         middleAboutPic.classList.add('about__pic--appear2');
