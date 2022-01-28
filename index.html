@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Williams | Web Developer</title>
 
     <!-- Primary Meta Tags -->
     <title>John Williams | Web Developer</title>
@@ -96,7 +95,14 @@
     <section class="landing" id="landing">
       <img
         class="landing__photo"
-        src="./img/portfolio_squared.jpg"
+        sizes="(max-width: 1400px) 100vw, 1400px"
+        srcset="
+          /img/portfolio_squared_w_200.jpg   200w,
+          /img/portfolio_squared_w_817.jpg   817w,
+          /img/portfolio_squared_w_1161.jpg 1161w,
+          /img/portfolio_squared_w_1400.jpg 1400w
+        "
+        src="/img/portfolio_squared_itjwph_c_scale,w_1400.jpg"
         alt="Headshot"
       />
       <div class="landing__container">
@@ -245,17 +251,50 @@
       </div>
       <div class="about__album">
         <img
-          src="img/career_pic.jpg"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            img/career_pic_a56gfl_c_scale,w_200.jpg   200w,
+            img/career_pic_a56gfl_c_scale,w_566.jpg   566w,
+            img/career_pic_a56gfl_c_scale,w_815.jpg   815w,
+            img/career_pic_a56gfl_c_scale,w_1024.jpg 1024w,
+            img/career_pic_a56gfl_c_scale,w_1226.jpg 1226w,
+            img/career_pic_a56gfl_c_scale,w_1381.jpg 1381w,
+            img/career_pic_a56gfl_c_scale,w_1400.jpg 1400w
+          "
+          src="img/career_pic_a56gfl_c_scale,w_1400.jpg"
           alt="Conducting"
           class="about__pic about__pic--1"
         />
         <img
-          src="img/career_stage.jpg"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            img/career_stage_d5c7io_c_scale,w_200.jpg   200w,
+            img/career_stage_d5c7io_c_scale,w_460.jpg   460w,
+            img/career_stage_d5c7io_c_scale,w_645.jpg   645w,
+            img/career_stage_d5c7io_c_scale,w_772.jpg   772w,
+            img/career_stage_d5c7io_c_scale,w_914.jpg   914w,
+            img/career_stage_d5c7io_c_scale,w_1041.jpg 1041w,
+            img/career_stage_d5c7io_c_scale,w_1173.jpg 1173w,
+            img/career_stage_d5c7io_c_scale,w_1349.jpg 1349w,
+            img/career_stage_d5c7io_c_scale,w_1385.jpg 1385w,
+            img/career_stage_d5c7io_c_scale,w_1400.jpg 1400w
+          "
+          src="img/career_stage_d5c7io_c_scale,w_1400.jpg"
           alt="Stage"
           class="about__pic about__pic--2"
         />
         <img
-          src="img/career_gym.jpg"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            img/career_gym_brwqwa_c_scale,w_200.jpg   200w,
+            img/career_gym_brwqwa_c_scale,w_529.jpg   529w,
+            img/career_gym_brwqwa_c_scale,w_767.jpg   767w,
+            img/career_gym_brwqwa_c_scale,w_965.jpg   965w,
+            img/career_gym_brwqwa_c_scale,w_1167.jpg 1167w,
+            img/career_gym_brwqwa_c_scale,w_1291.jpg 1291w,
+            img/career_gym_brwqwa_c_scale,w_1400.jpg 1400w
+          "
+          src="img/career_gym_brwqwa_c_scale,w_1400.jpg"
           alt="Pep Band"
           class="about__pic about__pic--3"
         />
@@ -270,7 +309,12 @@
           <div class="projects__image">
             <a href="https://ledgerline.herokuapp.com/" target="_blank">
               <img
-                src="img/portfolio_ledgerline.png"
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                  img/portfolio_ledgerline_dmewtd_c_scale,w_200.png   200w,
+                  img/portfolio_ledgerline_dmewtd_c_scale,w_1400.png 1400w
+                "
+                src="img/portfolio_ledgerline_dmewtd_c_scale,w_1400.png"
                 alt="Ledgerline screenshot"
               />
             </a>
@@ -301,7 +345,21 @@
               href="https://aqueous-citadel-80395.herokuapp.com/"
               target="_blank"
             >
-              <img src="img/portfolio_yelpcamp.png" alt="Yelpcamp screenshot" />
+              <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_200.png   200w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_468.png   468w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_657.png   657w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_834.png   834w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_1004.png 1004w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_1144.png 1144w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_1233.png 1233w,
+                  img/portfolio_yelpcamp_pakt3f_c_scale,w_1400.png 1400w
+                "
+                src="img/portfolio_yelpcamp_pakt3f_c_scale,w_1400.png"
+                alt="Yelpcamp screenshot"
+              />
             </a>
           </div>
           <div class="projects__info">
@@ -323,7 +381,20 @@
         <div class="projects__card">
           <div class="projects__image">
             <a href="https://nexters.vercel.app/" target="_blank">
-              <img src="img/portfolio_nexters.png" alt="Nexters screenshot" />
+              <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                  img/portfolio_nexters_zhk94q_c_scale,w_200.png   200w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_594.png   594w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_845.png   845w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_999.png   999w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_1182.png 1182w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_1338.png 1338w,
+                  img/portfolio_nexters_zhk94q_c_scale,w_1400.png 1400w
+                "
+                src="img/portfolio_nexters_zhk94q_c_scale,w_1400.png"
+                alt="Nexters screenshot"
+              />
             </a>
           </div>
           <div class="projects__info">
@@ -345,7 +416,15 @@
           <div class="projects__image">
             <a href="https://react-meetups-demo.vercel.app/" target="_blank">
               <img
-                src="img/portfolio_meetup.png"
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                  img/portfolio_meetup_wvyroi_c_scale,w_200.png   200w,
+                  img/portfolio_meetup_wvyroi_c_scale,w_681.png   681w,
+                  img/portfolio_meetup_wvyroi_c_scale,w_984.png   984w,
+                  img/portfolio_meetup_wvyroi_c_scale,w_1243.png 1243w,
+                  img/portfolio_meetup_wvyroi_c_scale,w_1400.png 1400w
+                "
+                src="img/portfolio_meetup_wvyroi_c_scale,w_1400.png"
                 alt="React Meetup Screenshot"
               />
             </a>
@@ -367,7 +446,15 @@
         <div class="projects__card">
           <div class="projects__image">
             <a href="https://markdown-code-demo.vercel.app/" target="_blank">
-              <img src="img/portfolio_jsx.png" alt="JSX Notebook screenshot" />
+              <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                  img/portfolio_jsx_fwzreu_c_scale,w_200.png   200w,
+                  img/portfolio_jsx_fwzreu_c_scale,w_1400.png 1400w
+                "
+                src="img/portfolio_jsx_fwzreu_c_scale,w_1400.png"
+                alt="JSX Notebook screenshot"
+              />
             </a>
           </div>
           <div class="projects__info">
