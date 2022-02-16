@@ -393,8 +393,9 @@ section {
 }
 
 .projects__card {
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 3px;
+  height: 100%;
 
   transition: all 0.2s;
 
